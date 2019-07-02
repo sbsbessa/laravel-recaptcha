@@ -1,6 +1,7 @@
 {
   "name": "biscolab/laravel-recaptcha",
   "license": "MIT",
+  "version": "2.0.5",
   "authors": [
     {
       "name": "Roberto Belotti",
