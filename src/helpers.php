@@ -31,9 +31,9 @@ if (!function_exists('htmlScriptTagJsApi')) {
     /**
      * @return Biscolab\ReCaptcha\ReCaptchaBuilder::htmlScriptTagJsApi()
      */
-    function htmlScriptTagJsApi($formId = '')
+    function htmlScriptTagJsApi($formId = '', $callback = 'biscolabLaravelReCaptcha')
     {
-        return ReCaptcha::htmlScriptTagJsApi($formId);
+        return ReCaptcha::htmlScriptTagJsApi($formId, $callback);
     }
 }
 
@@ -50,9 +50,9 @@ if (!function_exists('htmlFormButton')) {
     /**
      * @return Biscolab\ReCaptcha\ReCaptchaBuilder::htmlFormButton()
      */
-    function htmlFormButton($buttonInnerHTML = 'Submit')
+    function htmlFormButton($buttonInnerHTML = 'Submit', $callback = 'biscolabLaravelReCaptcha')
     {
-        return ReCaptcha::htmlFormButton($buttonInnerHTML);
+        return ReCaptcha::htmlFormButton($buttonInnerHTML, $callback);
     }
 }
 
